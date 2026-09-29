@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Islem Azzouz | Cloud &amp; DevOps</title>
+  <meta name="description" content="Islem Azzouz, Cloud & DevOps engineering student at ESPRIT. Looking for a final-year placement of at least 6 months from January 2027." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">islem<span>.azzouz</span></a>
+      <div class="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page" id="top">
+    <header class="hero">
+      <p class="eyebrow">Cloud &amp; DevOps engineering student @ ESPRIT</p>
+      <h1>Hi, I'm Islem Azzouz.</h1>
+      <p class="lead">I build infrastructure and automation that hold up in production, from payment-key verification pipelines to a 7-node OpenStack cloud.</p>
+      <p class="status"><span class="dot"></span>Looking for a final-year placement of at least 6 months, from January 2027 · Open to relocating</p>
+      <div class="ctas">
+        <a href="mailto:islem.azzouz@esprit.tn" class="btn">Get in touch</a>
+        <a href="https://www.linkedin.com/in/islem-azzouz-483265359" class="btn ghost" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/islemazz" class="btn ghost" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </header>
+
+    <section id="experience">
+      <h2><span class="num">01</span>Experience</h2>
+
+      <article class="job">
+        <div class="job-head">
+          <h3>Engineering Intern · DIGICOSER SARL</h3>
+          <span class="when">Jun – Sep 2026 · Sousse</span>
+        </div>
+        <p class="job-sub">Fintech · payment security</p>
+        <ul>
+          <li>Built an automated Python and 3DES pipeline that verifies payment terminal keys for partner banks, cross-checking key check values from three independent sources.</li>
+          <li>Diagnosed an undocumented key-wrapping layer that made every real file fail validation, and implemented the fix.</li>
+          <li>Built a Spring Boot + Angular portal with two-factor authentication, RBAC, per-bank data isolation and a database-level immutable audit log.</li>
+          <li>Containerised 5 services with Docker, set up GitHub Actions CI/CD, and wrote the Terraform configuration used to deploy the platform to Azure.</li>
+          <li><strong>Tested in production:</strong> 59 real key files processed in a single run.</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>Spring Boot</span><span>Angular</span><span>PostgreSQL</span><span>Docker</span><span>GitHub Actions</span><span>Terraform</span><span>Azure</span></div>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <h3>Immersion Intern · Enova Robotics</h3>
+          <span class="when">Jul – Aug 2025</span>
+        </div>
+        <p class="job-sub">Robotics · 3D web simulation</p>
+        <ul>
+          <li>Built a web simulator for the UR10e robotic arm on my own and delivered it two weeks early. The R&amp;D team adopted it and reported a <strong>30% reduction in physical testing</strong>.</li>
+          <li>Rigged the robot model in FreeCAD and Blender so all six joints could be animated in the browser.</li>
+        </ul>
+        <div class="tags"><span>React</span><span>Three.js</span><span>Blender</span><span>Spring Boot</span><span>MongoDB</span><span>JWT</span></div>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <h3>Technical Intern · Tunisie Telecom</h3>
+          <span class="when">Summer 2023 · Gafsa</span>
+        </div>
+        <ul>
+          <li>Supported router and switch configuration and network troubleshooting; resolved 3–5 incidents per day.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2><span class="num">02</span>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="card-kicker">Team of 7 · Selected for Bal des Projets</p>
+          <h3>Private Cloud Platform</h3>
+          <p>A 7-node OpenStack cloud delivering IaaS, PaaS and SaaS. I led the compute nodes, owned the Ansible automation, and delivered CI/CD with SonarQube plus Prometheus/Grafana monitoring.</p>
+          <div class="tags"><span>OpenStack</span><span>Kubernetes</span><span>Ansible</span><span>Terraform</span><span>Grafana</span></div>
+        </article>
+
+        <article class="card">
+          <p class="card-kicker">Team of 5</p>
+          <h3>CodeArena</h3>
+          <p>A competitive programming platform. I owned the shop module (Stripe, real-time WebSockets, JWT security) and led the integration of the team's modules. SonarQube quality gate: 0 bugs, 85% coverage.</p>
+          <div class="tags"><span>Spring Boot</span><span>Angular</span><span>WebSockets</span><span>SonarQube</span></div>
+          <a href="https://github.com/AdamZahi/CodeArena" class="link" target="_blank" rel="noopener">View repository →</a>
+        </article>
+
+        <article class="card">
+          <p class="card-kicker">Security labs</p>
+          <h3>Network Security Lab</h3>
+          <p>A pfSense firewall with WAN, LAN and DMZ zones, OpenVPN remote access, Snort IDS alerts, and ARP-spoofing MITM attack simulations.</p>
+          <div class="tags"><span>pfSense</span><span>OpenVPN</span><span>Snort</span><span>Nmap</span></div>
+        </article>
+
+        <article class="card">
+          <p class="card-kicker">Machine learning</p>
+          <h3>EngageLab</h3>
+          <p>Cleaned a real Kaggle dataset and compared decision trees, random forest, XGBoost and K-Means to choose the best model, served through a Flask dashboard.</p>
+          <div class="tags"><span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>Flask</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2><span class="num">03</span>Skills</h2>
+      <div class="skills">
+        <div><h4>Cloud &amp; infra</h4><p>OpenStack · Azure · VMware · Kubernetes · Docker · Terraform · Ansible</p></div>
+        <div><h4>CI/CD &amp; monitoring</h4><p>GitHub Actions · Jenkins · SonarQube · Prometheus · Grafana · Git</p></div>
+        <div><h4>Development</h4><p>Python · Java · Spring Boot · Angular · React · JavaScript · SQL</p></div>
+        <div><h4>Security</h4><p>3DES key handling · JWT · RBAC · pfSense · OpenVPN · Snort · Nmap</p></div>
+      </div>
+      <p class="learning"><strong>Currently learning:</strong> DevOps training (Kubernetes, ArgoCD, Terraform) · AWS Cloud Foundations · Cisco Network Security</p>
+    </section>
+
+    <section id="education">
+      <h2><span class="num">04</span>Education</h2>
+      <div class="job">
+        <div class="job-head">
+          <h3>ESPRIT School of Engineering</h3>
+          <span class="when">2022 – expected 2027</span>
+        </div>
+        <p class="job-sub">Diplôme National d'Ingénieur (Master's level) in Computer Science, IT Architecture &amp; Cloud Computing</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's talk</h2>
+      <p>I'm looking for a cloud, platform or DevOps engineering placement starting in 2027.</p>
+      <a href="mailto:islem.azzouz@esprit.tn" class="btn">islem.azzouz@esprit.tn</a>
+    </section>
+
+    <footer class="site-footer">© 2026 Islem Azzouz · Tunis, Tunisia</footer>
+  </main>
+</body>
+</html>
