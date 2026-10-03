@@ -88,6 +88,17 @@
   .btn.ghost{background:transparent;color:var(--fg);border-color:var(--line)}
   .btn.ghost:hover{border-color:var(--accent);box-shadow:none}
 
+  /* about */
+  .about-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;align-items:start}
+  @media(max-width:720px){.about-grid{grid-template-columns:1fr}}
+  .about-bio p{color:var(--muted);margin:0 0 14px;max-width:62ch}
+  .about-bio p:last-child{margin-bottom:0}
+  .about-bio strong{color:var(--fg)}
+  .facts{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+  .facts dl{margin:0;display:grid;gap:15px}
+  .facts dt{font-family:var(--font-mono);font-size:11.5px;color:var(--accent);letter-spacing:.03em}
+  .facts dd{margin:3px 0 0;font-size:14px;color:var(--fg)}
+
   section{padding-block:60px}
   .eyebrow{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.04em;color:var(--accent);margin-bottom:10px}
   .eyebrow::before{content:"// "}
@@ -177,6 +188,7 @@
   <div class="nav-in">
     <a href="#top" class="logo">islem<b>.azzouz</b></a>
     <div class="nav-links">
+      <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -205,6 +217,29 @@
       </div>
     </div>
   </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="wrap">
+    <div class="reveal">
+    <p class="eyebrow">about</p>
+    <h2 class="sec">About me</h2>
+    <div class="about-grid">
+      <div class="about-bio">
+        <p>I'm a final-year Cloud and DevOps engineering student at ESPRIT, and what I enjoy most is making systems <strong>take care of themselves</strong> — automated, observable, and reliable enough that monitoring catches a problem before anyone has to.</p>
+        <p>I've worked across the stack: a production-tested payment-security platform at a fintech, a 3D robotics web simulator, a 7-node OpenStack private cloud, and a competitive-programming platform where I owned the payments and security modules. I like owning something <strong>end to end</strong>, from design to deployment, and getting the small details right.</p>
+        <p>Outside tech, I'm a big fan of films and series and I write a little — the same curiosity that pulls me into a good story is what makes me want to understand how a system really works. I'm also active in <strong>IEEE Women in Engineering</strong> as a WIE Ambassador, where I co-organised Women in Tech (100+ attendees) and Pinkathon.</p>
+      </div>
+      <aside class="facts">
+        <dl>
+          <div><dt>based in</dt><dd>Tunis, Tunisia</dd></div>
+          <div><dt>languages</dt><dd>Arabic (native) · French (B2) · English (B2)</dd></div>
+          <div><dt>focus</dt><dd>Cloud · DevOps · Platform / SRE</dd></div>
+          <div><dt>open to</dt><dd>Tunisia &amp; abroad · on-site or remote</dd></div>
+        </dl>
+      </aside>
+    </div>
+    </div>
+  </section>
 
   <!-- EXPERIENCE -->
   <section id="experience" class="wrap">
